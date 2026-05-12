@@ -1,0 +1,18 @@
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# エディタ
+.vscode/
+*.tmp
+*.bak
+
+# 個人情報・機密（施設担当者の連絡先など）
+mile1/phase9_target_list/personal_contacts.*
+mile1/working/private_*
+
+# Webビルド成果物（将来）
+web/dist/
+web/.cache/
+node_modules/
