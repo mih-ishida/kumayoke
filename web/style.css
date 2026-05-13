@@ -214,6 +214,24 @@ h3 + .list {
   margin-top: 10px;
 }
 
+.group-label {
+  margin-top: 12px;
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 0.88rem;
+  color: var(--accent);
+  letter-spacing: 0.03em;
+}
+
+.mini-note {
+  margin-top: 16px;
+  padding: 12px 16px;
+  font-size: 0.88rem;
+  color: var(--muted);
+  border-top: 1px dashed var(--line);
+  line-height: 1.7;
+}
+
 @media (max-width: 760px) {
   .hero {
     padding: 44px 0 34px;
