@@ -1,0 +1,132 @@
+:root {
+  --bg: #f7f7f4;
+  --panel: #ffffff;
+  --ink: #1e2a23;
+  --muted: #4b5a52;
+  --line: #d6ddd8;
+  --accent: #2f5d46;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+  line-height: 1.7;
+  color: var(--ink);
+  background: var(--bg);
+}
+
+.container {
+  width: min(920px, 92%);
+  margin: 0 auto;
+}
+
+.site-header {
+  background: linear-gradient(180deg, #eef4ef, #f7f7f4);
+  border-bottom: 1px solid var(--line);
+  padding: 2.5rem 0 2rem;
+}
+
+.kicker {
+  margin: 0 0 0.5rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+h1,
+h2 {
+  line-height: 1.35;
+}
+
+h1 {
+  margin: 0 0 0.8rem;
+  font-size: clamp(1.5rem, 3.2vw, 2rem);
+}
+
+h2 {
+  margin: 0 0 0.8rem;
+  font-size: clamp(1.2rem, 2.4vw, 1.45rem);
+}
+
+.lead {
+  margin: 0;
+  color: var(--muted);
+}
+
+.section {
+  padding: 2rem 0;
+}
+
+.section-alt {
+  background: var(--panel);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+ul,
+ol {
+  padding-left: 1.2rem;
+  margin: 0.6rem 0 0;
+}
+
+.cols {
+  columns: 2;
+  column-gap: 2rem;
+}
+
+.faq dt {
+  font-weight: 700;
+  margin-top: 0.9rem;
+}
+
+.faq dd {
+  margin: 0.25rem 0 0.7rem;
+  color: var(--muted);
+}
+
+.cta {
+  background: #eef5f0;
+}
+
+.cta-link {
+  display: inline-block;
+  color: var(--accent);
+  text-decoration: none;
+  border: 1px solid var(--accent);
+  background: #fff;
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+}
+
+.cta-link:hover,
+.cta-link:focus-visible {
+  background: #f4fbf7;
+}
+
+.site-footer {
+  padding: 1.4rem 0 2rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+}
+
+.site-footer p {
+  margin: 0.2rem 0;
+}
+
+a {
+  color: var(--accent);
+}
+
+@media (max-width: 700px) {
+  .cols {
+    columns: 1;
+  }
+
+  .section {
+    padding: 1.5rem 0;
+  }
+}
