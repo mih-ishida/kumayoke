@@ -245,6 +245,19 @@ h3 + .list {
   line-height: 1.7;
 }
 
+.one-pager-link {
+  margin-top: 22px;
+  padding: 14px 16px;
+  background: rgba(255, 253, 249, 0.82);
+  border: 1px solid rgba(92, 107, 79, 0.2);
+  border-radius: 12px;
+  font-size: 0.93rem;
+}
+
+.one-pager-link p + p {
+  margin-top: 6px;
+}
+
 @media (max-width: 760px) {
   .hero {
     padding: 44px 0 34px;

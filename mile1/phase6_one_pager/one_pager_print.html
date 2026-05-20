@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>クマヨケ 1枚メモ（宿泊施設様向け）</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 14mm 14mm 12mm 14mm;
+    }
+
+    :root {
+      --text: #2b261f;
+      --muted: #645a4b;
+      --accent: #5c6b4f;
+      --accent-soft: #e7edde;
+      --line: #d7cec0;
+      --surface: #fffdf9;
+      --bg: #f4f1ea;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      background: #fff;
+      font-family: "BIZ UDPGothic", "Yu Gothic", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+      font-size: 8.2pt;
+      line-height: 1.65;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    /* ヘッダー */
+    .page-header {
+      border-bottom: 2.5px solid var(--accent);
+      padding-bottom: 6pt;
+      margin-bottom: 8pt;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .page-title {
+      font-size: 13pt;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.2;
+      margin: 0;
+    }
+
+    .page-tagline {
+      font-size: 7.5pt;
+      color: var(--muted);
+      margin: 2pt 0 0;
+    }
+
+    .header-right {
+      text-align: right;
+      font-size: 7pt;
+      color: var(--muted);
+    }
+
+    /* グリッドレイアウト */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 7pt;
+      margin-bottom: 7pt;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 6pt;
+      margin-bottom: 7pt;
+    }
+
+    .full-width {
+      margin-bottom: 7pt;
+    }
+
+    /* カード */
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 6pt;
+      padding: 7pt 8pt;
+    }
+
+    .card-accent {
+      background: var(--accent-soft);
+      border: 1px solid #c8d8b8;
+      border-radius: 6pt;
+      padding: 7pt 8pt;
+    }
+
+    h2 {
+      font-size: 8.5pt;
+      font-weight: 700;
+      color: var(--accent);
+      margin: 0 0 4pt;
+      letter-spacing: 0.02em;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 3pt;
+    }
+
+    h3 {
+      font-size: 7.5pt;
+      font-weight: 700;
+      color: var(--text);
+      margin: 5pt 0 2pt;
+    }
+
+    h3:first-child {
+      margin-top: 0;
+    }
+
+    p {
+      margin: 0 0 3pt;
+    }
+
+    ul {
+      margin: 2pt 0 3pt;
+      padding-left: 11pt;
+    }
+
+    li {
+      margin-bottom: 1.5pt;
+    }
+
+    .label {
+      display: inline-block;
+      font-size: 7pt;
+      font-weight: 700;
+      color: var(--accent);
+      margin-top: 4pt;
+      margin-bottom: 1pt;
+    }
+
+    /* 導入メモ（上段サブタイトル） */
+    .what-intro {
+      font-size: 8pt;
+      color: var(--muted);
+      margin-bottom: 4pt;
+    }
+
+    /* 連絡先・注記フッター */
+    .footer-area {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 7pt;
+      margin-top: 0;
+    }
+
+    .contact-block {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 6pt;
+      padding: 7pt 8pt;
+    }
+
+    .contact-block p {
+      margin-bottom: 1.5pt;
+    }
+
+    .contact-label {
+      font-size: 7pt;
+      font-weight: 700;
+      display: inline-block;
+      width: 48pt;
+      color: var(--muted);
+    }
+
+    .note-block {
+      background: #f9f6f1;
+      border: 1px dashed var(--line);
+      border-radius: 6pt;
+      padding: 7pt 8pt;
+      font-size: 7pt;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .note-block h2 {
+      font-size: 7.5pt;
+      color: var(--muted);
+    }
+
+    .tag {
+      display: inline-block;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 6.5pt;
+      font-weight: 700;
+      padding: 1pt 5pt;
+      border-radius: 999pt;
+      margin-right: 3pt;
+      margin-bottom: 2pt;
+    }
+
+    @media print {
+      body {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <div class="page-header">
+    <div>
+      <p class="page-title">クマヨケ　1枚メモ</p>
+      <p class="page-tagline">宿泊施設様向け　社内共有・回覧用</p>
+    </div>
+    <div class="header-right">
+      クマヨケ代表　石田 通隆<br>
+      kumayoke_info@classwolf.com
+    </div>
+  </div>
+
+  <!-- 上段：概要 + 対象施設 -->
+  <div class="grid-2">
+
+    <div class="card">
+      <h2>これは何か</h2>
+      <p class="what-intro">遭遇回避を前提とした安全補助オペレーション導入相談です。</p>
+      <p>宿泊者向けにクマ撃退スプレーをフロントで貸し出せるようにするための、備品・書類・対応フロー一式を用意することが主な内容です。スプレーそのものの販売でも、登山ガイド業でもありません。</p>
+    </div>
+
+    <div class="card">
+      <h2>対象となりやすい施設</h2>
+      <p style="margin-bottom:4pt;">
+        <span class="tag">支笏湖周辺</span>
+        <span class="tag">定山渓</span>
+        <span class="tag">千歳・新千歳空港周辺</span>
+        <span class="tag">自然エリア近接</span>
+      </p>
+      <ul>
+        <li>登山、自然散策、ドライブ観光の宿泊者がいる施設</li>
+        <li>ホテル、温泉旅館、ゲストハウス、ロッジ、小規模宿泊施設</li>
+        <li>規模・形態は問いません</li>
+      </ul>
+      <p style="font-size:7pt; color:#645a4b; margin-top:3pt;">すべての施設様に必要という前提ではなく、立地・宿泊者層・フロント体制との相性を確認する段階です。</p>
+    </div>
+
+  </div>
+
+  <!-- 中段：役割分担（施設 + クマヨケ） -->
+  <div class="grid-2">
+
+    <div class="card">
+      <h2>施設様にお願いすること</h2>
+      <ul>
+        <li>フロントでの受け渡し</li>
+        <li>同意確認</li>
+        <li>返却確認</li>
+        <li>返却ログへの簡単な記録</li>
+        <li>会計運用は施設様の方針に合わせて確認</li>
+      </ul>
+      <p style="font-size:7pt; color:#645a4b; margin-top:4pt;">1組あたり5〜10分程度の貸出オペレーションを想定しています。専門的な使用説明はスタッフ様ではなく、説明資料側で対応します。</p>
+    </div>
+
+    <div class="card">
+      <h2>クマヨケ側で用意するもの</h2>
+      <span class="label">備品</span>
+      <ul>
+        <li>クマ撃退スプレー本体、ホルスター、保管箱</li>
+      </ul>
+      <span class="label">書類</span>
+      <ul>
+        <li>注意事項、利用同意書、スタッフ向け手順書</li>
+        <li>返却チェック表、返却ログ</li>
+      </ul>
+      <span class="label">運用設計</span>
+      <ul>
+        <li>未返却・破損・使用時の連絡・確認手順</li>
+        <li>使用期限・個体番号の管理方法</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- 下段：安全面 + 返信・相談 -->
+  <div class="grid-2">
+
+    <div class="card">
+      <h2>安全面の考え方</h2>
+      <ul>
+        <li>遭遇回避が前提。クマ撃退スプレーは安全を保証するものではありません</li>
+        <li>貸出対象は宿泊者限定・18歳以上・自然活動目的を基本案とします</li>
+        <li>館内噴射禁止、対人使用禁止、航空機への持込・預け入れ禁止</li>
+        <li>使用・破損・未返却が発生した場合の扱いは、施設様の運用条件に合わせて事前に整理します</li>
+      </ul>
+    </div>
+
+    <div class="card-accent">
+      <h2>返信・相談について</h2>
+      <ul>
+        <li>ご返信いただいても、導入を決めたことにはなりません</li>
+        <li>短い内容のご返信でも差し支えありません</li>
+        <li>15分程度のオンライン相談またはメールでの相談を受け付けています</li>
+        <li>気になる点だけのご返信でも問題ありません</li>
+      </ul>
+      <p style="margin-top:5pt; font-size:7.5pt;">
+        <strong>メール：</strong><a href="mailto:kumayoke_info@classwolf.com">kumayoke_info@classwolf.com</a>
+      </p>
+      <p style="font-size:7.5pt;">
+        <strong>Web：</strong><a href="https://mih-ishida.github.io/kumayoke/">https://mih-ishida.github.io/kumayoke/</a>
+      </p>
+    </div>
+
+  </div>
+
+  <!-- フッター：連絡先 + 注記 -->
+  <div class="footer-area">
+
+    <div class="contact-block">
+      <h2>連絡先</h2>
+      <p><span class="contact-label">事業名</span>クマヨケ</p>
+      <p><span class="contact-label">代表</span>石田 通隆</p>
+      <p><span class="contact-label">事業形態</span>個人事業</p>
+      <p><span class="contact-label">所在地</span>北海道札幌市</p>
+      <p><span class="contact-label">連絡先</span><a href="mailto:kumayoke_info@classwolf.com">kumayoke_info@classwolf.com</a></p>
+      <p><span class="contact-label">Webページ</span><a href="https://mih-ishida.github.io/kumayoke/">https://mih-ishida.github.io/kumayoke/</a></p>
+    </div>
+
+    <div class="note-block">
+      <h2>注記</h2>
+      <p>本メモでは申込み、決済、契約手続きは扱いません。</p>
+      <p>導入条件や費用は、施設様の運用条件を伺ったうえで確認します。</p>
+      <p>ご連絡時にお預かりした情報は、クマヨケに関する相談対応にのみ使用します。</p>
+    </div>
+
+  </div>
+
+</body>
+</html>
