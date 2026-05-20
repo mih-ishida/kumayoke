@@ -10,7 +10,8 @@
       "Bash(ls \"C:\\\\Program Files \\(x86\\)\\\\Microsoft\\\\Edge\\\\Application\\\\\" 2>/dev/null | head -5 || echo \"Edge not at x86 path\")",
       "Read(//c/Program Files \\(x86\\)/Microsoft/Edge/Application\" 2>/dev/**)",
       "Read(//c/Program Files \\(x86\\)/Microsoft/Edge/Application/**)",
-      "PowerShell($edge = \"C:\\\\Program Files \\(x86\\)\\\\Microsoft\\\\Edge\\\\Application\\\\msedge.exe\"; $chrome = \"C:\\\\Program Files\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe\"; $chrome2 = \"C:\\\\Program Files \\(x86\\)\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe\"; if \\(Test-Path $edge\\) { Write-Output \"EDGE:$edge\" } if \\(Test-Path $chrome\\) { Write-Output \"CHROME:$chrome\" } if \\(Test-Path $chrome2\\) { Write-Output \"CHROME:$chrome2\" })"
+      "PowerShell($edge = \"C:\\\\Program Files \\(x86\\)\\\\Microsoft\\\\Edge\\\\Application\\\\msedge.exe\"; $chrome = \"C:\\\\Program Files\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe\"; $chrome2 = \"C:\\\\Program Files \\(x86\\)\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe\"; if \\(Test-Path $edge\\) { Write-Output \"EDGE:$edge\" } if \\(Test-Path $chrome\\) { Write-Output \"CHROME:$chrome\" } if \\(Test-Path $chrome2\\) { Write-Output \"CHROME:$chrome2\" })",
+      "PowerShell(New-Item -ItemType Directory -Force \"C:\\\\myprojects\\\\kumayoke\\\\mile1\\\\_requirements\" | Out-Null; Get-ChildItem \"C:\\\\myprojects\\\\kumayoke\\\\mile1\\\\references\" -File | ForEach-Object { Move-Item $_.FullName \"C:\\\\myprojects\\\\kumayoke\\\\mile1\\\\_requirements\\\\$\\($_.Name\\)\" -Force }; Write-Output \"moved\"; Get-ChildItem \"C:\\\\myprojects\\\\kumayoke\\\\mile1\\\\_requirements\" -Name)"
     ]
   }
 }
