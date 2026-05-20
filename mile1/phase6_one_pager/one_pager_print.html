@@ -6,7 +6,7 @@
   <style>
     @page {
       size: A4;
-      margin: 14mm 14mm 12mm 14mm;
+      margin: 12mm 14mm 10mm 14mm;
     }
 
     :root {
@@ -16,20 +16,23 @@
       --accent-soft: #e7edde;
       --line: #d7cec0;
       --surface: #fffdf9;
-      --bg: #f4f1ea;
     }
 
     * {
       box-sizing: border-box;
     }
 
-    body {
+    html, body {
       margin: 0;
+      padding: 0;
+    }
+
+    body {
       color: var(--text);
       background: #fff;
       font-family: "BIZ UDPGothic", "Yu Gothic", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
-      font-size: 8.2pt;
-      line-height: 1.65;
+      font-size: 8pt;
+      line-height: 1.6;
     }
 
     a {
@@ -40,8 +43,8 @@
     /* ヘッダー */
     .page-header {
       border-bottom: 2.5px solid var(--accent);
-      padding-bottom: 6pt;
-      margin-bottom: 8pt;
+      padding-bottom: 5pt;
+      margin-bottom: 7pt;
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
@@ -67,38 +70,31 @@
       color: var(--muted);
     }
 
-    /* グリッドレイアウト */
+    /* グリッド */
     .grid-2 {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 7pt;
-      margin-bottom: 7pt;
-    }
-
-    .grid-3 {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
       gap: 6pt;
-      margin-bottom: 7pt;
+      margin-bottom: 6pt;
     }
 
     .full-width {
-      margin-bottom: 7pt;
+      margin-bottom: 6pt;
     }
 
     /* カード */
     .card {
       background: var(--surface);
       border: 1px solid var(--line);
-      border-radius: 6pt;
-      padding: 7pt 8pt;
+      border-radius: 5pt;
+      padding: 6pt 8pt;
     }
 
     .card-accent {
       background: var(--accent-soft);
       border: 1px solid #c8d8b8;
-      border-radius: 6pt;
-      padding: 7pt 8pt;
+      border-radius: 5pt;
+      padding: 6pt 8pt;
     }
 
     h2 {
@@ -108,14 +104,14 @@
       margin: 0 0 4pt;
       letter-spacing: 0.02em;
       border-bottom: 1px solid var(--line);
-      padding-bottom: 3pt;
+      padding-bottom: 2pt;
     }
 
     h3 {
       font-size: 7.5pt;
       font-weight: 700;
       color: var(--text);
-      margin: 5pt 0 2pt;
+      margin: 4pt 0 1pt;
     }
 
     h3:first-child {
@@ -132,7 +128,7 @@
     }
 
     li {
-      margin-bottom: 1.5pt;
+      margin-bottom: 1pt;
     }
 
     .label {
@@ -140,34 +136,31 @@
       font-size: 7pt;
       font-weight: 700;
       color: var(--accent);
-      margin-top: 4pt;
+      margin-top: 3pt;
       margin-bottom: 1pt;
     }
 
-    /* 導入メモ（上段サブタイトル） */
     .what-intro {
-      font-size: 8pt;
+      font-size: 7.5pt;
       color: var(--muted);
-      margin-bottom: 4pt;
+      margin-bottom: 3pt;
     }
 
-    /* 連絡先・注記フッター */
     .footer-area {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 7pt;
-      margin-top: 0;
+      gap: 6pt;
     }
 
     .contact-block {
       background: var(--surface);
       border: 1px solid var(--line);
-      border-radius: 6pt;
-      padding: 7pt 8pt;
+      border-radius: 5pt;
+      padding: 6pt 8pt;
     }
 
     .contact-block p {
-      margin-bottom: 1.5pt;
+      margin-bottom: 1pt;
     }
 
     .contact-label {
@@ -181,11 +174,11 @@
     .note-block {
       background: #f9f6f1;
       border: 1px dashed var(--line);
-      border-radius: 6pt;
-      padding: 7pt 8pt;
+      border-radius: 5pt;
+      padding: 6pt 8pt;
       font-size: 7pt;
       color: var(--muted);
-      line-height: 1.6;
+      line-height: 1.55;
     }
 
     .note-block h2 {
@@ -219,7 +212,7 @@
   <div class="page-header">
     <div>
       <p class="page-title">クマヨケ　1枚メモ</p>
-      <p class="page-tagline">宿泊施設様向け　社内共有・回覧用</p>
+      <p class="page-tagline">宿泊施設様向け　社内共有・検討会用</p>
     </div>
     <div class="header-right">
       クマヨケ代表　石田 通隆<br>
@@ -227,7 +220,7 @@
     </div>
   </div>
 
-  <!-- 上段：概要 + 対象施設 -->
+  <!-- 上段：これは何か + 想定する場面 -->
   <div class="grid-2">
 
     <div class="card">
@@ -236,25 +229,23 @@
       <p>宿泊者向けにクマ撃退スプレーをフロントで貸し出せるようにするための、備品・書類・対応フロー一式を用意することが主な内容です。スプレーそのものの販売でも、登山ガイド業でもありません。</p>
     </div>
 
-    <div class="card">
-      <h2>対象となりやすい施設</h2>
-      <p style="margin-bottom:4pt;">
+    <div class="card-accent">
+      <h2>想定する場面</h2>
+      <ul>
+        <li>宿泊者の方から、クマ対策について聞かれた経験</li>
+        <li>飛行機でスプレーを持ち込めない旅行者の方への現地案内の必要</li>
+        <li>フロントで貸し出せる形にしたいが、保管・同意確認・返却・未返却時対応まで施設様だけで整えるのが大変</li>
+      </ul>
+      <p style="margin-top:3pt;">
         <span class="tag">支笏湖周辺</span>
         <span class="tag">定山渓</span>
         <span class="tag">千歳・新千歳空港周辺</span>
-        <span class="tag">自然エリア近接</span>
       </p>
-      <ul>
-        <li>登山、自然散策、ドライブ観光の宿泊者がいる施設</li>
-        <li>ホテル、温泉旅館、ゲストハウス、ロッジ、小規模宿泊施設</li>
-        <li>規模・形態は問いません</li>
-      </ul>
-      <p style="font-size:7pt; color:#645a4b; margin-top:3pt;">すべての施設様に必要という前提ではなく、立地・宿泊者層・フロント体制との相性を確認する段階です。</p>
     </div>
 
   </div>
 
-  <!-- 中段：役割分担（施設 + クマヨケ） -->
+  <!-- 中段：施設様にお願い + クマヨケ側で用意 -->
   <div class="grid-2">
 
     <div class="card">
@@ -266,7 +257,7 @@
         <li>返却ログへの簡単な記録</li>
         <li>会計運用は施設様の方針に合わせて確認</li>
       </ul>
-      <p style="font-size:7pt; color:#645a4b; margin-top:4pt;">1組あたり5〜10分程度の貸出オペレーションを想定しています。専門的な使用説明はスタッフ様ではなく、説明資料側で対応します。</p>
+      <p style="font-size:7pt; color:#645a4b; margin-top:3pt;">1組あたり5〜10分程度の貸出オペレーションを想定しています。専門的な使用説明はスタッフ様ではなく、説明資料側で対応します。</p>
     </div>
 
     <div class="card">
@@ -282,6 +273,7 @@
       </ul>
       <span class="label">運用設計</span>
       <ul>
+        <li>保管方法、同意確認手順、返却確認の流れ</li>
         <li>未返却・破損・使用時の連絡・確認手順</li>
         <li>使用期限・個体番号の管理方法</li>
       </ul>
@@ -289,17 +281,19 @@
 
   </div>
 
-  <!-- 下段：安全面 + 返信・相談 -->
+  <!-- 下段：個別確認になる項目 + 返信・相談について -->
   <div class="grid-2">
 
     <div class="card">
-      <h2>安全面の考え方</h2>
+      <h2>個別確認になる項目</h2>
       <ul>
-        <li>遭遇回避が前提。クマ撃退スプレーは安全を保証するものではありません</li>
-        <li>貸出対象は宿泊者限定・18歳以上・自然活動目的を基本案とします</li>
-        <li>館内噴射禁止、対人使用禁止、航空機への持込・預け入れ禁止</li>
-        <li>使用・破損・未返却が発生した場合の扱いは、施設様の運用条件に合わせて事前に整理します</li>
+        <li>会計運用（レンタル料金は宿泊施設様側の収益として扱う形を基本案）</li>
+        <li>保証金の扱い、身分証確認</li>
+        <li>使用・破損・未返却時の費用負担</li>
+        <li>クマヨケ側がどこまで一次対応を担うか</li>
+        <li>ホテル側の館内規程・保険との整合</li>
       </ul>
+      <p style="font-size:7pt; color:#645a4b; margin-top:3pt;">責任分担の前提を曖昧にしたままお話を進めることはありません。</p>
     </div>
 
     <div class="card-accent">
@@ -310,7 +304,7 @@
         <li>15分程度のオンライン相談またはメールでの相談を受け付けています</li>
         <li>気になる点だけのご返信でも問題ありません</li>
       </ul>
-      <p style="margin-top:5pt; font-size:7.5pt;">
+      <p style="margin-top:4pt; font-size:7.5pt;">
         <strong>メール：</strong><a href="mailto:kumayoke_info@classwolf.com">kumayoke_info@classwolf.com</a>
       </p>
       <p style="font-size:7.5pt;">
@@ -318,6 +312,17 @@
       </p>
     </div>
 
+  </div>
+
+  <!-- 安全面（横長1段） -->
+  <div class="card full-width">
+    <h2>安全面の基本</h2>
+    <ul style="columns: 2; column-gap: 16pt; margin: 2pt 0 0;">
+      <li>遭遇回避が前提。クマ撃退スプレーは安全を保証するものではありません</li>
+      <li>貸出対象は宿泊者限定・18歳以上・自然活動目的を基本案とします</li>
+      <li>館内噴射禁止、対人使用禁止</li>
+      <li>航空機への持込・預け入れ禁止</li>
+    </ul>
   </div>
 
   <!-- フッター：連絡先 + 注記 -->
@@ -336,7 +341,7 @@
     <div class="note-block">
       <h2>注記</h2>
       <p>本メモでは申込み、決済、契約手続きは扱いません。</p>
-      <p>導入条件や費用は、施設様の運用条件を伺ったうえで確認します。</p>
+      <p>導入条件は、施設様の運用条件を伺ったうえで確認します。</p>
       <p>ご連絡時にお預かりした情報は、クマヨケに関する相談対応にのみ使用します。</p>
     </div>
 
