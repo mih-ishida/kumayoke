@@ -11,7 +11,17 @@
       "Read(//c/Program Files \\(x86\\)/Microsoft/Edge/Application\" 2>/dev/**)",
       "Read(//c/Program Files \\(x86\\)/Microsoft/Edge/Application/**)",
       "PowerShell($edge = \"C:\\\\Program Files \\(x86\\)\\\\Microsoft\\\\Edge\\\\Application\\\\msedge.exe\"; $chrome = \"C:\\\\Program Files\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe\"; $chrome2 = \"C:\\\\Program Files \\(x86\\)\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe\"; if \\(Test-Path $edge\\) { Write-Output \"EDGE:$edge\" } if \\(Test-Path $chrome\\) { Write-Output \"CHROME:$chrome\" } if \\(Test-Path $chrome2\\) { Write-Output \"CHROME:$chrome2\" })",
-      "PowerShell(New-Item -ItemType Directory -Force \"C:\\\\myprojects\\\\kumayoke\\\\mile1\\\\_requirements\" | Out-Null; Get-ChildItem \"C:\\\\myprojects\\\\kumayoke\\\\mile1\\\\references\" -File | ForEach-Object { Move-Item $_.FullName \"C:\\\\myprojects\\\\kumayoke\\\\mile1\\\\_requirements\\\\$\\($_.Name\\)\" -Force }; Write-Output \"moved\"; Get-ChildItem \"C:\\\\myprojects\\\\kumayoke\\\\mile1\\\\_requirements\" -Name)"
+      "PowerShell(New-Item -ItemType Directory -Force \"C:\\\\myprojects\\\\kumayoke\\\\mile1\\\\_requirements\" | Out-Null; Get-ChildItem \"C:\\\\myprojects\\\\kumayoke\\\\mile1\\\\references\" -File | ForEach-Object { Move-Item $_.FullName \"C:\\\\myprojects\\\\kumayoke\\\\mile1\\\\_requirements\\\\$\\($_.Name\\)\" -Force }; Write-Output \"moved\"; Get-ChildItem \"C:\\\\myprojects\\\\kumayoke\\\\mile1\\\\_requirements\" -Name)",
+      "Bash(ls web/assets/illustrations/)",
+      "Bash(ls web/assets/)",
+      "Bash(sed -n '36,54p' web/index.html)",
+      "Bash(sed -n '36,54p' web/f/jozankei-nature-village.html)",
+      "Bash(ls -R mile1/phase9_target_list/)",
+      "Bash(ls -R mile1/phase8_customization/)",
+      "Bash(ls mile1/)",
+      "Bash(ls)",
+      "Bash(awk -F'|' '{print $2\": \"$4\" / \"$5}')",
+      "Bash(git status *)"
     ]
   }
 }

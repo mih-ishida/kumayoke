@@ -275,4 +275,75 @@ h3 + .list {
   .business {
     font-size: 0.97rem;
   }
+
+  .button-link {
+    display: block;
+    text-align: center;
+  }
+}
+
+/* Phase5追加 */
+.logo {
+  display: block;
+  height: 60px;
+  width: auto;
+  margin-bottom: 20px;
+}
+
+.photo-placeholder {
+  width: 88px;
+  height: 88px;
+  background: var(--surface-strong);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  margin-bottom: 14px;
+}
+
+.section p + p {
+  margin-top: 12px;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+/* 貸出物一式イラスト */
+.kit-illustration {
+  margin: 24px 0 12px;
+}
+
+.kit-illustration img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  border: 1px solid rgba(29, 45, 35, 0.12);
+  background: #fff;
+}
+
+.kit-labels {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin: 0 0 24px;
+  padding: 0;
+  list-style: none;
+  font-size: 0.9rem;
+  color: #334238;
+}
+
+.kit-labels li {
+  text-align: center;
+}
+
+@media (max-width: 760px) {
+  .kit-illustration {
+    margin: 20px 0 10px;
+  }
+
+  .kit-labels {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px 12px;
+    font-size: 0.86rem;
+  }
 }
