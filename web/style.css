@@ -299,6 +299,14 @@ h3 + .list {
   margin-bottom: 14px;
 }
 
+.profile-photo {
+  width: 120px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  display: block;
+}
+
 .section p + p {
   margin-top: 12px;
 }

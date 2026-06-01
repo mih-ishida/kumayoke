@@ -2,11 +2,13 @@
 
 ## 公開URL
 
-https://mih-ishida.github.io/kumayoke/
+https://kumayoke.classwolf.jp/
+
+（DNS確認済み・HTTPS強制ON。旧URL: https://mih-ishida.github.io/kumayoke/）
 
 ## 公開方法
 
-GitHub Pages
+GitHub Pages（カスタムドメイン: kumayoke.classwolf.jp）
 
 ## 公開対象
 
@@ -236,7 +238,7 @@ Phase4本文（mile1/phase4_web_content/web_content.md）を正として、web/i
 
 ### Phase9 送信前管理ファイルの作成（2026-06-01）
 
-施設別HTML10件を初回連絡に使う前の送信準備として、`mile1/phase9_target_list/send_package.md` を作成した。10施設の施設別HTML・公開予定URL（`https://mih-ishida.github.io/kumayoke/f/{slug}.html`）・問い合わせ導線・送信可否（仮判定）・初回メール（全未作成）・送信状況（全未送信）・未確認事項を一覧化。送信可（フォームURL明確）は4施設、要確認は6施設。HTML・style.css・正本（target_list.md／facilities/index.md）等は変更していない。
+施設別HTML10件を初回連絡に使う前の送信準備として、`mile1/phase9_target_list/send_package.md` を作成した。10施設の施設別HTML・公開予定URL（`https://kumayoke.classwolf.jp/f/{slug}.html`）・問い合わせ導線・送信可否（仮判定）・初回メール（全未作成）・送信状況（全未送信）・未確認事項を一覧化。送信可（フォームURL明確）は4施設、要確認は6施設。HTML・style.css・正本（target_list.md／facilities/index.md）等は変更していない。
 
 ---
 
