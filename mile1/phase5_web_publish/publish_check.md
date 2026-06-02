@@ -236,6 +236,18 @@ Phase4本文（mile1/phase4_web_content/web_content.md）を正として、web/i
 - [ ] 導入済み・提携済みに見えないか／施設を危険視していないか
 - [ ] 各施設の公式情報（エリア・タイプ・受付体制・未確認URL/フォーム）の最終確認
 
+### Phase8 morappu-camp.html 軽量化・正典候補整理（2026-06-02）
+
+morappu-camp.html を施設別HTMLの軽量版・正典候補として整理した。HTMLおよびCSSの変更は行っていない。
+
+- morappu-camp.html を施設別HTMLの軽量版・正典候補として整理
+- 12セクション構成・本文方針・装飾ルール・代表者ルール・CTA導線を確認済み
+- facility_page_rules.md を新規作成（mile1/phase8_customization/facility_page_rules.md）
+- 今後の他施設展開では同ファイルを正典として参照する
+- HTML自体は今回変更していない
+
+---
+
 ### Phase9 送信前管理ファイルの作成（2026-06-01）
 
 施設別HTML10件を初回連絡に使う前の送信準備として、`mile1/phase9_target_list/send_package.md` を作成した。10施設の施設別HTML・公開予定URL（`https://kumayoke.classwolf.jp/f/{slug}.html`）・問い合わせ導線・送信可否（仮判定）・初回メール（全未作成）・送信状況（全未送信）・未確認事項を一覧化。送信可（フォームURL明確）は4施設、要確認は6施設。HTML・style.css・正本（target_list.md／facilities/index.md）等は変更していない。
