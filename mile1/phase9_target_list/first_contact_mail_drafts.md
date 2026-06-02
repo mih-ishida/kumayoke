@@ -11,7 +11,7 @@
 - 施設別HTMLのURLを本文に入れる
 - 価格・料金・保証金・安全保証・責任免除に読める表現は入れない
 - 強く売り込まず、必要性がありそうかを伺う形にする
-- 送信元アドレス：`kumayoke_info@classwolf.com`
+- 送信元アドレス：`kumayoke@kumayoke.org`
 - 署名：`クマヨケ代表 石田 通隆`
 
 ---
@@ -46,7 +46,7 @@
 > 簡単なご返信でも構いません。よろしくお願いいたします。
 >
 > クマヨケ代表 石田 通隆  
-> kumayoke_info@classwolf.com
+> kumayoke@kumayoke.org
 
 ---
 
@@ -78,7 +78,7 @@
 > 現場に合う余地がありそうかを、まずは短く伺えれば幸いです。
 >
 > クマヨケ代表 石田 通隆  
-> kumayoke_info@classwolf.com
+> kumayoke@kumayoke.org
 
 ---
 
@@ -110,7 +110,7 @@
 > すぐにお願いしたい趣旨ではなく、現場に合う可能性がありそうかを伺いたいと考えています。
 >
 > クマヨケ代表 石田 通隆  
-> kumayoke_info@classwolf.com
+> kumayoke@kumayoke.org
 
 ---
 
@@ -142,7 +142,7 @@ Forever Camping Paradise ご担当者さま
 > ご負担の大きいご提案ではなく、必要性がありそうかをまず伺いたい趣旨です。
 >
 > クマヨケ代表 石田 通隆  
-> kumayoke_info@classwolf.com
+> kumayoke@kumayoke.org
 
 ---
 
@@ -174,4 +174,4 @@ Forever Camping Paradise ご担当者さま
 > まずは現場に合う余地がありそうかを伺えれば幸いです。
 >
 > クマヨケ代表 石田 通隆  
-> kumayoke_info@classwolf.com
+> kumayoke@kumayoke.org
