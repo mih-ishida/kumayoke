@@ -11,12 +11,17 @@
     .decorated-deco { position: relative; }
     .decorated-deco::before { content: ''; display: block; width: 7px; height: 7px; margin: 6px auto 0; border: 1.5px solid rgba(92, 107, 79, 0.5); transform: rotate(45deg); }
     .decorated-deco::after { content: ''; position: absolute; left: 50%; transform: translateX(-50%); top: 24px; bottom: 0; width: 1px; background: linear-gradient(to bottom, rgba(92, 107, 79, 0.35), rgba(92, 107, 79, 0)); }
+    .hero-photo {
+      background:
+        linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+        url("../assets/hero-shikotsuko-lake.png") center / cover no-repeat;
+    }
     @media (max-width: 760px) { .decorated-body { display: block; } .decorated-deco { display: none; } }
   </style>
 </head>
 <body>
 
-  <header class="hero">
+  <header class="hero hero-photo">
     <div class="container">
       <img src="../assets/logo-kumayoke.png" alt="クマヨケ" class="logo">
       <p class="eyebrow">美笛キャンプ場 ご担当者様へ</p>
