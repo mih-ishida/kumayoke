@@ -11,6 +11,10 @@
     .decorated-deco { position: relative; }
     .decorated-deco::before { content: ''; display: block; width: 7px; height: 7px; margin: 6px auto 0; border: 1.5px solid rgba(92, 107, 79, 0.5); transform: rotate(45deg); }
     .decorated-deco::after { content: ''; position: absolute; left: 50%; transform: translateX(-50%); top: 24px; bottom: 0; width: 1px; background: linear-gradient(to bottom, rgba(92, 107, 79, 0.35), rgba(92, 107, 79, 0)); }
+    .footer-signature { display: flex; align-items: center; gap: 20px; }
+    .footer-logo { width: 108px; height: auto; flex: 0 0 auto; }
+    .footer-signature-text p + p { margin-top: 6px; }
+    @media (max-width: 760px) { .footer-signature { gap: 12px; align-items: flex-start; } .footer-logo { width: 92px; } }
     .hero-photo {
       background:
         linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
@@ -211,8 +215,13 @@
 
   <footer class="footer">
     <div class="container">
-      <p>クマヨケ　代表 石田 通隆</p>
-      <p>連絡先：<a href="mailto:kumayoke@kumayoke.org">kumayoke@kumayoke.org</a></p>
+      <div class="footer-signature">
+        <img src="../assets/logo-kumayoke.png" alt="クマヨケ ロゴ" class="footer-logo">
+        <div class="footer-signature-text">
+          <p>クマヨケ　代表 石田 通隆</p>
+          <p>連絡先：<a href="mailto:kumayoke@kumayoke.org">kumayoke@kumayoke.org</a></p>
+        </div>
+      </div>
     </div>
   </footer>
 

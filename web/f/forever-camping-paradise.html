@@ -15,6 +15,10 @@
     .hero-heading-line { display: inline-block; }
     @media (min-width: 761px) { .hero-heading-line { white-space: nowrap; } }
     @media (max-width: 760px) { .hero-heading { max-width: 18em; font-size: clamp(1.6rem, 7vw, 2rem); } }
+    .footer-signature { display: flex; align-items: center; gap: 20px; }
+    .footer-logo { width: 108px; height: auto; flex: 0 0 auto; }
+    .footer-signature-text p + p { margin-top: 6px; }
+    @media (max-width: 760px) { .footer-signature { gap: 12px; align-items: flex-start; } .footer-logo { width: 92px; } }
     .hero-photo {
       background:
         linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
@@ -44,6 +48,16 @@
     <section class="section alt"><div class="container narrow"><h2>代表者について</h2><img src="../assets/profile-ishida.jpg" alt="クマヨケ代表 石田通隆の写真" class="profile-photo"><p><strong>クマヨケ代表　石田 通隆</strong></p><p>札幌東高校、神戸大学を卒業。小学校教諭を経て、現在はシステムエンジニアとして働いています。</p><p>教員時代の同僚がクマ被害に遭ったことをきっかけに、クマと人との距離の取り方について考えるようになりました。</p><p>札幌市を拠点に、クマよけスプレーを宿泊施設やキャンプ場で無理なく管理・貸出できる仕組みを整えています。</p></div></section>
     <section class="section cta-section"><div class="container narrow"><h2>連絡先</h2><p>ご関心がありましたら、簡単な箇条書きでのご返信でも構いません。押し売りや繰り返しの営業連絡は行いません。</p><div class="reply-example"><h3>ご返信はこのような内容で構いません</h3><ul class="list compact"><li>少し話を聞いてみたいです</li><li>こういう点が不安です</li><li>現時点では難しそうです</li><li>もう少し詳しく知りたいです</li></ul></div><p><a class="button-link" href="mailto:kumayoke@kumayoke.org?subject=%E3%82%AF%E3%83%9E%E3%83%A8%E3%82%B1%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%EF%BC%88Forever%20Camping%20Paradise%E6%A7%98%EF%BC%89&body=%E6%96%BD%E8%A8%AD%E5%90%8D%EF%BC%9A%0D%0A%E3%81%94%E6%8B%85%E5%BD%93%E8%80%85%E5%90%8D%EF%BC%9A%0D%0A%E3%81%94%E8%BF%94%E4%BF%A1%E5%86%85%E5%AE%B9%EF%BC%9A">メールでご連絡する</a></p><p class="note">宛先：kumayoke@kumayoke.org　　件名例：クマヨケについて（Forever Camping Paradise様）</p></div></section>
   </main>
-  <footer class="footer"><div class="container"><p>クマヨケ　代表 石田 通隆</p><p>連絡先：<a href="mailto:kumayoke@kumayoke.org">kumayoke@kumayoke.org</a></p></div></footer>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-signature">
+        <img src="../assets/logo-kumayoke.png" alt="クマヨケ ロゴ" class="footer-logo">
+        <div class="footer-signature-text">
+          <p>クマヨケ　代表 石田 通隆</p>
+          <p>連絡先：<a href="mailto:kumayoke@kumayoke.org">kumayoke@kumayoke.org</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
