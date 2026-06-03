@@ -11,6 +11,10 @@
     .decorated-deco { position: relative; }
     .decorated-deco::before { content: ''; display: block; width: 7px; height: 7px; margin: 6px auto 0; border: 1.5px solid rgba(92, 107, 79, 0.5); transform: rotate(45deg); }
     .decorated-deco::after { content: ''; position: absolute; left: 50%; transform: translateX(-50%); top: 24px; bottom: 0; width: 1px; background: linear-gradient(to bottom, rgba(92, 107, 79, 0.35), rgba(92, 107, 79, 0)); }
+    .hero-heading { max-width: 24em; font-size: clamp(1.7rem, 3vw, 2.35rem); line-height: 1.25; }
+    .hero-heading-line { display: inline-block; }
+    @media (min-width: 761px) { .hero-heading-line { white-space: nowrap; } }
+    @media (max-width: 760px) { .hero-heading { max-width: 18em; font-size: clamp(1.6rem, 7vw, 2rem); } }
     .hero-photo {
       background:
         linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
@@ -24,7 +28,7 @@
     <div class="container">
       <img src="../assets/logo-kumayoke.png" alt="クマヨケ" class="logo">
       <p class="eyebrow">札幌市定山渓自然の村 ご担当者様へ</p>
-      <h1>定山渓で自然体験を楽しむ利用者に、<br>受付で渡せる<br><span class="nowrap">クマ撃退スプレーを</span></h1>
+      <h1 class="hero-heading"><span class="hero-heading-line">定山渓で自然体験を楽しむ利用者に、</span><br><span class="hero-heading-line">受付で渡せる</span><br><span class="hero-heading-line">クマ撃退スプレーを</span></h1>
       <p class="lead">定山渓で自然体験やキャンプを楽しむ利用者に、受付でクマ撃退スプレーを案内・貸出できる仕組みを整えています。</p>
     </div>
   </header>
